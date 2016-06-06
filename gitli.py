@@ -288,7 +288,7 @@ def print_issues(issues, open_issues, bcolor):
         milestone_text = '[' + milestone + ']'
         type_text = '[' + ITYPES[type_id - 1] + ']'
 
-        print('{5}#{0:<4}{9} {6}{1:<48}{9} {7}{2:<6} {3:<7}{9} - {8}{4}{9}'
+        print('{5}#{0:<4}{9} {7}{2:<6} {3:<7}{9} {8}{4:<7}{9} - {6}{1:<48}{9} '
             .format(number, title, type_text, milestone_text, open_text,
             bcolor.CYAN, bcolor.WHITE, bcolor.BLUE, color, bcolor.ENDC))
 
